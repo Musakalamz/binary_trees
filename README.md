@@ -267,20 +267,20 @@ Function Prototypes
     * Searching for a node in an AVL tree of size `n`.
 
 * **36. Is Binary heap**
-  * [130-binary_tree_is_heap.c ](./130-binary_tree_is_heap.c: Function that checks if a binary tree is a valid Max Binary Heap:
+  * [130-binary_tree_is_heap.c ](./130-binary_tree_is_heap.c): Function that checks if a binary tree is a valid Max Binary Heap:
     * Where `tree` is a pointer to the root node of the `tree` to check. 
     * Your function must return 1 if `tree `is a valid Max Binary Heap, and 0 otherwise 
     * If `tree` is NULL, return 0
 
 * **37. Heap - Insert**
-  * [131-heap_insert.c](./131-heap_insert.c: Function that inserts a value in Max Binary Heap:
+  * [131-heap_insert.c](./131-heap_insert.c): Function that inserts a value in Max Binary Heap:
     * Where `root` is a double pointer to the root node of the Heap to insert the `value`
     * And `value` is the value to store in the node to be inserted   
     * Your function must return a pointer to the created node, or NULL on failure
     * If the address stored in root is NULL, the created node must become the root node.
 
 * **38. Heap - Array to Binary Heap**
-  * [132-array_to_heap.c](./132-array_to_heap.c ): Function that builds a Max Binary Heap tree from an array:
+  * [132-array_to_heap.c](./132-array_to_heap.c): Function that builds a Max Binary Heap tree from an array:
     * Where `array` is a pointer to the first element of the array to be converted
     * And `size` is the number of element in the `array` 
     * Your function must return a pointer to the root node of the created Binary Heap, or NULL on failure
