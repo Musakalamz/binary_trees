@@ -242,6 +242,71 @@ Function Prototypes
   * Returns a pointer to the root node of the created AVL tree, or `NULL` on failure.
   * Ignores duplicate values.
 
+* **33. AVL - Remove**
+  * [123-avl_remove.c](./1123-avl_remove.c): Function that removes a node from an AVL tree):
+    * Where `root` is a pointer to the root node of the tree for removing a node
+    * And `value` is the value to remove in the tree.  
+    * Once located, the node containing a value equals to value must be removed and freed
+    * If the node to be deleted has two children, it must be replaced with its first in-order successor (not predecessor)
+    * After deletion of the desired node, the tree must be rebalanced if necessary
+   * Your function must return a pointer to the new root node of the tree after removing the desired value, and after rebalancing
+
+* **34. AVL - From sorted array**
+  * [124-sorted_array_to_avl.c](./124-sorted_array_to_avl.c): Function that builds an AVL tree from an array;
+    * Where `array` is a pointer to the first element of the `array` to be converted
+    * And `size` is the number of element in the `array`.  
+    * Your function must return a pointer to the root node of the created AVL tree, or NULL on failure
+    * You can assume there will be no duplicate value in the array
+    * You are not allowed to rotate
+
+* **35. Big O #AVL Tree**
+  * [125-O](./125-O): Text file containing the average time complexities of AVL tree
+  opeartions (one answer per line):
+    * Inserting the value `n`.
+    * Removing the node with the value `n`.
+    * Searching for a node in an AVL tree of size `n`.
+
+* **36. Is Binary heap**
+  * [130-binary_tree_is_heap.c ](./130-binary_tree_is_heap.c: Function that checks if a binary tree is a valid Max Binary Heap:
+    * Where `tree` is a pointer to the root node of the `tree` to check. 
+    * Your function must return 1 if `tree `is a valid Max Binary Heap, and 0 otherwise 
+    * If `tree` is NULL, return 0
+
+* **37. Heap - Insert**
+  * [131-heap_insert.c](./131-heap_insert.c: Function that inserts a value in Max Binary Heap:
+    * Where `root` is a double pointer to the root node of the Heap to insert the `value`
+    * And `value` is the value to store in the node to be inserted   
+    * Your function must return a pointer to the created node, or NULL on failure
+    * If the address stored in root is NULL, the created node must become the root node.
+
+* **38. Heap - Array to Binary Heap**
+  * [132-array_to_heap.c](./132-array_to_heap.c ): Function that builds a Max Binary Heap tree from an array:
+    * Where `array` is a pointer to the first element of the array to be converted
+    * And `size` is the number of element in the `array` 
+    * Your function must return a pointer to the root node of the created Binary Heap, or NULL on failure
+
+* **39. Heap - Extract**
+  * [133-heap_extract.c](./133-heap_extract.c): Function that extracts the root node of a Max Binary Heap:
+    * Where `root` is a double pointer to the root node of heap
+    * Your function must return the value stored in the root node
+    * The root node must be freed and replace with the last level-order node of the heap
+		* Once replaced, the heap must be rebuilt if necessary
+		* If your function fails, return 0
+
+
+* **40. Heap - Sort**
+  * [134-heap_to_sorted_array.c](./134-heap_to_sorted_array.c ): Function that converts a Binary Max Heap to a sorted array of integers:
+    * Where heap is a pointer to the root node of the heap to convert
+    * And size is an address to store the size of the array
+    * You can assume size is a valid address
+    * Since we are using Max Heap, the returned array must be sorted in descending order
+
+* **41. Big O #Binary Heap**
+  * [135-O](./135-O): Text file containing the average time complexities of
+  binary heap opeartions (one answer per line):
+    * Inserting the value `n`.
+    * Extracting the root node.
+    * Searching for a node in a binary heap of size `n`.
 
 ## Authors :black_nib:
 
